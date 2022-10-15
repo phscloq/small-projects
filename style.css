@@ -1,0 +1,88 @@
+html{
+    box-sizing: border-box;
+}
+*{
+ box-sizing: inherit;
+ margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #d5baba;
+ 
+}
+.container{
+  display: flex;
+    height: 100vh;
+} /* LEFT PORTION OF THE PAGE */
+.left{
+   width: 40vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("halie.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;;
+}
+.logo{/* center this block*/
+   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin-bottom: 0px;
+    position: relative;
+    color: white;
+}
+.logo-img, .logo-name{
+    z-index: 1;
+}
+
+.logo-blck{
+    /*make black box behind logo so it will be more readeble*/
+    background-color: black;
+   position: absolute;
+    width: 100%;
+    height: 108%;
+    z-index: 0;
+    opacity: 0.5;
+}
+.footer{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin-top: 0px;
+    position: relative;
+    color: white;
+
+  
+
+}
+.footer p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+}
+
+/* RIGHT PORTION OF THE PAGE */
+.right{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d5baba;
+
+}
+.form{
+    width: 100%;
+background-color: #e0d0d0;
+display: flex;
+flex-direction: column;
+ 
+}
