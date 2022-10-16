@@ -2,7 +2,7 @@
 Learning css by creating simple projects.
 
 Week1 Projects:
-1. Sign-up Form
+**Sign-up Form**
 *What should be improved?*
 1. Photo credit should go bottom of left side.
 2. Responsive
