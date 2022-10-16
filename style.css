@@ -2,7 +2,7 @@ html{
     box-sizing: border-box;
 }
 *{
- box-sizing: inherit;
+ box-sizing: border-box;
  margin: 0;
     padding: 0;
 }
@@ -41,7 +41,7 @@ body{
 }
 
 .logo-blck{
-    /*make black box behind logo so it will be more readeble*/
+    /*black background for logo to make it more readeble*/
     background-color: black;
    position: absolute;
     width: 100%;
@@ -66,23 +66,60 @@ body{
 .footer p{
     font-size: 20px;
     font-weight: 600;
-    color: #000;
+    color: rgb(255, 255, 255);
 }
 
 /* RIGHT PORTION OF THE PAGE */
 .right{
     width: 60vw;
-    display: flex;
+   display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #d5baba;
+    justify-content:center;
 
 }
 .form{
+    display: block;
+
+}
+form{
     width: 100%;
-background-color: #e0d0d0;
-display: flex;
-flex-direction: column;
- 
+   
+   box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+padding-left: 40px;
+}
+.form-control{
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+}
+input{
+padding: 10px;
+}
+form p{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+}
+.description{
+    width: 90%;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 2rem;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    
+}
+.button{
+    padding-top: 20px;
+    padding-left: 40px;
+}
+button{
+    padding: 10px 20px;
+    box-shadow: 0 0 10px 0 rgba(204, 83, 198, 0.5);
 }
