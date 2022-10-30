@@ -60,6 +60,7 @@ padding-right: 22px;
 .buttons_class button:hover{
     background-color: rgb(68, 147, 155);
     color: white;
+    cursor: pointer;
 }
 .light{
     position: absolute;
