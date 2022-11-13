@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+display: grid;
+grid-template-columns: 1fr 5fr;
+grid-template-rows: 200px auto;
+height: 100vh;
+}
+
+/*SIDEPANEL CSS START*/
+.sidepanel{
+grid-row: 1/4;
+background-color: rgb(47, 141, 188);
+color: white;
+display: grid;
+grid-template-rows: 100px 300px 150px;
+text-align: left;
+align-content:stretch;
+/* padding-left: 40px; */
+
+}
+li{
+    font-size: 1.3rem;
+    list-style: none;
+}
+.logo{
+    grid-row: 1;
+    padding-top: 17px;
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}.logo p{
+    padding-top: 5px;
+   
+}.logo img{
+    
+}
+.side-1{
+    grid-row: 2;
+    display: grid;
+    width: 80%;
+    margin-left: 15px;
+    
+    grid-template-rows: repeat(6, 1fr);
+
+}
+.side-1 li, .side-2 li{
+display: flex;
+align-items: flex-start;
+padding-left: 5px;
+}
+.side-1 li p, .side-2 li p{
+    padding-left: 25px;
+}
+.side-2{
+    margin-left: 15px;
+    margin-top: 2rem;
+display: grid;
+    grid-template-rows: 50px 50px 50px;
+}/*SIDEPANEL CSS END*/
+
+
+
+
+/*TOPBAR CSS START*/
+.topbar{
+    grid-row: 1/2;
+    grid-column: 2;
+    min-width: 400px;
+    background-color: rgb(238, 238, 238);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+    border-bottom: 2px solid rgb(141, 141, 141);
+
+    align-items: center ;
+
+}
+.search{
+    padding-left: 72px;
+   grid-row: 1;
+   display: grid;
+   grid-template-columns: 30px 1fr;
+}
+.search input{
+    width: 800px;
+    height: 30px;
+    background-color: rgb(222, 217, 220);
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 15px;
+}
+.search img{
+   
+   height: 32px;
+   width: 32px
+
+}
+
+.welcome{
+    padding-left: 72px;
+    grid-row: 2;
+    grid-column: 1/2;
+   
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: grid;
+    grid-template-columns: 72px 198px;
+    grid-template-rows: 1fr;
+}
+.welcome p{
+    grid-column: 2;
+}
+.welcome-text{
+    align-self: center;
+}
+.welcome img{
+    border-radius: 32px;
+}
+.welcome-message{
+    font-size: 1rem;
+}
+
+
+
+.profile{
+    grid-column: 2;
+    grid-row: 1;
+    /*  display: grid;
+        grid-template-columns: 50px 50px 70px;
+        grid-template-rows: 50px;
+        align-items: center;
+        padding-left: 170px; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+.profile p{
+    justify-self: end;
+    margin-left:30px;
+}
+.profile-img{
+    border-radius: 32px;
+    margin-left:30px;
+}
+
+
+
+
+
+
+.topbar-buttons{
+    grid-row: 2;
+    grid-column: 2;
+    margin-right: 140px;
+    justify-self: center;
+}
+.topbar-buttons button{
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid rgb(141, 141, 141);
+    background-color: rgb(47, 141, 188);
+    color: white;
+    margin-right: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*CONTENT CSS START*/
+.content{
+    grid-row: 2/4;
+    grid-column: 2;
+    min-width: 400px;
+    background-color: rgb(222, 217, 220);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+    padding: 25px;
+}
+.p1{
+   grid-column: 1/-1;
+   font-size: 2.2rem;
+   margin-bottom: -2.5rem;
+}
+.p2{
+    font-size: 1.8rem;
+}
+.projects{
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem 1rem;
+
+}
+
+.projects div{
+
+    background-color: rgb(229, 229, 229);
+    border-radius: 10px;
+    border: 1px solid black;
+    border-left: 15px solid rgb(179, 142, 10);
+ 
+ 
+}
+.content-right{
+    padding-left: 15px;
+    grid-column: 2;
+   display: grid;
+   grid-template-rows: 1fr 1fr;
+  
+   
+}
+.block{
+    height:480px;
+    width: 300px;
+    background-color: rgb(229, 229, 229);
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+.news{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.ntop, .nmid{
+       
+    border-bottom: 1px dashed black
+}
