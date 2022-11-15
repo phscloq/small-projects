@@ -9,7 +9,7 @@
     display: flex;
 }
 .container{
-   width: 300px;
+    width: 374px;
     background-color: rgb(211, 189, 161);
     height: 100vh;
     padding-top: 20px;
@@ -21,8 +21,9 @@
 }
 .button-div{
     display:flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
+
 .container h1{
     text-align: center;
     margin-bottom: 20px;
@@ -44,7 +45,7 @@ input{
 
     padding-left: 5px;
 
-    font-size: x-large;
+    font-size: 2rem;
 }
 .form-group{
     margin-top: 20px;
@@ -71,9 +72,22 @@ input{
     font-size: 4rem;
     padding: 6px 20px;
 }
+#readcheck{
+    display:flex;
+    margin-bottom: 2px;
+    align-items: center;
+}
+#readcheck input{
+    height: 50px;
+}
 .button-div2{
     display: flex;
     justify-content: center;
+    margin-top: 15px;
+   
+}
+.button-div2 button{
+    border: none;
 }
 .content{
     display: grid;
@@ -96,4 +110,15 @@ input{
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+.book-card button{
+    padding: 5px;
+    text-transform: uppercase;
+    border: none;
+}
+.book-card button:hover{
+    background-color: rgb(104, 163, 148);
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
 }

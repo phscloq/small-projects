@@ -37,11 +37,12 @@
                     <input type="text" name="noofpages" id="pages" required>
                    
                 </div>
-                <div class="inputBox">
-                    <label>Status</label>
-                    <input type="text" name="booktype" id="read" required>
+                <div class="inputBox" id="readcheck">
+                    <label>Read: </label>
+                    <input type="checkbox" name="readstatus" id="read">
                    
                 </div>
+                <hr>
                <div class="button-div2"> <button type="button" id="submitbut" onclick="displayBooks()">+</button></div>
             </div></form>
         </div>
@@ -53,6 +54,7 @@
                 <p class="book-card__author">Paulo Coelho</p>
                 <p class="book-card__pages">200</p>
                 <p class="book-card__read">Read</p>
+                <button class="book-card__button" onclick="deleteBook()">Del</button>
             </div>
         </div>
         
