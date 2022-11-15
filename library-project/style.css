@@ -1,0 +1,99 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    display: flex;
+}
+.container{
+   width: 300px;
+    background-color: rgb(211, 189, 161);
+    height: 100vh;
+    padding-top: 20px;
+}
+.button-div button{
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.button-div{
+    display:flex;
+    justify-content: flex-end;
+}
+.container h1{
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    outline: none;
+    
+    font-size: xx-large;
+    box-sizing: border-box;
+}
+.container label{
+ 
+  
+
+    padding-left: 5px;
+
+    font-size: x-large;
+}
+.form-group{
+    margin-top: 20px;
+  
+}
+.submit{
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 35px 0 0 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  
+}
+.form{
+    display: none;
+    height: 0px;
+    transition: height 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+    
+    width: 300px;
+}
+.form button{
+    font-size: 4rem;
+    padding: 6px 20px;
+}
+.button-div2{
+    display: flex;
+    justify-content: center;
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+  grid-auto-rows: max-content;
+  background-color: bisque;
+  width: 100vw;
+}
+.book-card{
+   
+   width: 348px;
+    height: 124px;
+  background-color: rgb(108, 198, 168);
+    border: 5px outset rgb(104, 163, 148);
+   
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

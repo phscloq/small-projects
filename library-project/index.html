@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="main">
+<!--library book submit form-->
+    <div class="container">
+        <div class="button-div">
+        <button class="button" onclick="formDisplay()">New Book</button>
+        </div>
+        <div class="form">
+            <form action="index.php" method="POST">
+                <h1>New Book Form</h1>
+                <hr>
+                <div class="form-group">
+                <div class="inputBox">
+                    <label>Book Name</label>
+                    <input type="text" name="bookname" id="title" required>
+                   
+                </div>
+                <div class="inputBox">
+                    <label>Author Name</label>
+                    <input type="text" name="authorname" id="author" required>
+                    
+                </div>
+               
+                <div class="inputBox">
+                    <label>No. of Pages</label>
+                    <input type="text" name="noofpages" id="pages" required>
+                   
+                </div>
+                <div class="inputBox">
+                    <label>Status</label>
+                    <input type="text" name="booktype" id="read" required>
+                   
+                </div>
+               <div class="button-div2"> <button type="button" id="submitbut" onclick="displayBooks()">+</button></div>
+            </div></form>
+        </div>
+    </div>
+    <div class="content">
+        <div class="book-card">
+            <div class="book-card__content">
+                <h2 class="book-card__title">The Alchemist</h2>
+                <p class="book-card__author">Paulo Coelho</p>
+                <p class="book-card__pages">200</p>
+                <p class="book-card__read">Read</p>
+            </div>
+        </div>
+        
+
+    </div>
+
+</div>
+</body>
+</html>
