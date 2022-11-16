@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link href="style.css" type="text/css" rel="stylesheet">
-    <script src="script.js"></script>
+   
     <title>Document</title>
     
 </head>
@@ -46,6 +46,7 @@
                <div class="button-div2"> <button type="button" id="submitbut" onclick="displayBooks()">+</button></div>
             </div></form>
         </div>
+    <div class="warning"><p>You have reached maximum number of books you can add to the library</p></div>
     </div>
     <div class="content">
         <div class="book-card">
@@ -53,8 +54,8 @@
                 <h2 class="book-card__title">The Alchemist</h2>
                 <p class="book-card__author">Paulo Coelho</p>
                 <p class="book-card__pages">200</p>
-                <p class="book-card__read">Read</p>
-                <button class="book-card__button" onclick="deleteBook()">Del</button>
+                <p class="book-card__read" style="color: black">Read</p>
+                <button class="book-card__button" >Del</button>
             </div>
         </div>
         
@@ -62,5 +63,6 @@
     </div>
 
 </div>
+<script src="script.js"></script>
 </body>
 </html>
